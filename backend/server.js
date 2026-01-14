@@ -4,7 +4,6 @@ import dotenv from "dotenv";
 import cors from "cors";
 import multer from "multer";
 import fs from "fs";
-import OpenAI from "openai";
 import mongoose from "mongoose";
 
 import userRoutes from "./routes/users.routes.js";
