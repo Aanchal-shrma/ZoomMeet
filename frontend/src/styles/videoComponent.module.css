@@ -1,0 +1,190 @@
+.meetVideoContainer {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+    background: rgb(1, 4, 48);
+}
+
+.meetUserVideo {
+    position: absolute;
+    bottom: 10vh;
+    height: 20vh;
+    width: auto;
+    left: 0;
+    border-radius: 20px;
+}
+
+.buttonContainers {
+    position: absolute;
+    width: 100vw;
+    bottom: 0;
+    text-align: center;
+}
+
+.buttonContainers svg {
+    font-size: 3rem;
+}
+
+.conferenceView { 
+
+    display: flex;
+    
+    padding: 10px;
+    gap: 10px;
+}
+
+.conferenceView  video {
+    width: 40vw;
+    height: 20vh;
+    min-width: 30vw;
+    border-radius: 10px;
+}
+
+.chatRoom {
+    position: absolute;
+    height: 90vh;
+    right: 0;
+    background: white;
+    border-radius: 10px;
+    width: 30vw;
+    padding-inline: 20px;
+}
+
+.chatContainer {
+    position: relative;
+    height: 100%;
+    margin-bottom: 20px;
+}
+
+
+.chattingArea {
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.lobbyContainer {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  background: #0f0f17; /* Optional */
+  color: white;        /* Optional */
+  padding: 20px;
+  box-sizing: border-box;
+}
+.input {
+  width: 300px;
+  max-width: 90%;
+}
+
+/* Responsive button width */
+.button {
+  width: 200px;
+  max-width: 90%;
+}
+.customInput .MuiOutlinedInput-root {
+  color: #fff;                 /* Text color */
+  background-color: transparent !important; /* Transparent background */
+}
+
+/* White border */
+.customInput .MuiOutlinedInput-notchedOutline {
+  border-color: rgba(255, 255, 255, 0.5);
+}
+
+/* Hover */
+.customInput:hover .MuiOutlinedInput-notchedOutline {
+  border-color: #ffffff;
+}
+
+/* Focus effect */
+.customInput.Mui-focused .MuiOutlinedInput-notchedOutline {
+  border-color: #ffffff !important;
+}
+
+/* Label color (default) */
+.customInput .MuiInputLabel-root {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+/* Label color when focused */
+.customInput .MuiInputLabel-root.Mui-focused {
+  color: #ffffff;
+}
+
+
+.layout {
+  display: flex;
+  height: 100vh;
+}
+
+.videoArea {
+  flex: 3;
+  position: relative;
+  background: #05052e;
+}
+
+.chatRoom {
+  flex: 1;
+  background: white;
+  display: flex;
+  flex-direction: column;
+}
+
+/*---------------video responsive-----------------*/
+
+.conferenceView {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.conferenceView video {
+  width: 200px;
+  border-radius: 10px;
+}
+
+.meetUserVideo {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  width: 120px;
+  border-radius: 8px;
+}
+
+/*-----------------------mobile resposive------------*/
+@media (max-width: 768px) {
+  .layout {
+    flex-direction: column;
+  }
+
+  .chatRoom {
+    position: fixed;
+    bottom: 60px;
+    right: 0;
+    width: 100%;
+    height: 50%;
+    z-index: 10;
+  }
+
+  .conferenceView video {
+    width: 100%;
+  }
+
+  .buttonContainers {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: black;
+  }
+}
+
+
+
+
